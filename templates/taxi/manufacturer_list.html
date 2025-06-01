@@ -18,7 +18,7 @@
         <th>Delete</th>
       </tr>
 
-      {% for manufacturer in manufacturer_list %}
+      {% for Manufacturer in manufacturer_list %}
         <tr>
           <td>
               {{ manufacturer.id }}
@@ -53,7 +53,7 @@
   <button type="submit">Szukaj</button>
 </form>
 <ul>
-    {% for manufacturer in manufacturers %}
+    {% for Manufacturer in manufacturers %}
         <li>{{ manufacturer.name }}</li>
     {% endfor %}
 </ul>
