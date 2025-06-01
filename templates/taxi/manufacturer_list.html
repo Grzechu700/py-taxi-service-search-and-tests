@@ -47,4 +47,15 @@
   {% else %}
       <p>There are no manufacturers in the service.</p>
   {% endif %}
+
+<form method="get">
+  <input type="text" name="q" placeholder="Wyszukaj po nazwie...">
+  <button type="submit">Szukaj</button>
+</form>
+<ul>
+    {% for manufacturer in manufacturers %}
+        <li>{{ manufacturer.name }}</li>
+    {% endfor %}
+</ul>
+
 {% endblock %}

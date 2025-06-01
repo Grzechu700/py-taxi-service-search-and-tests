@@ -19,4 +19,15 @@
   {% else %}
     <p>There are no cars in taxi</p>
   {% endif %}
+
+<form method="get">
+    <input type="text" name="q" placeholder="Wyszukaj po modelu...">
+    <button type="submit">Szukaj</button>
+</form>
+<ul>
+    {% for car in cars %}
+        <li>{{ car.model }}</li>
+    {% endfor %}
+</ul>
+
 {% endblock %}
